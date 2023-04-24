@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: docker build
-        run: docker-compose up
+        run: docker-compose up --build
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
